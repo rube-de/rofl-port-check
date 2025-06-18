@@ -2,6 +2,7 @@ services:
   rofl-port-check:
     build: .
     image: "ghcr.io/rube-de/port-check:latest"
+    platform: linux/amd64
     ports:
       - "3000:3000"
     environment:
