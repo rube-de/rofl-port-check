@@ -1,7 +1,7 @@
 {
   "name": "rofl-port-check",
   "version": "1.0.0",
-  "description": "A simple TypeScript backend for port checking and health monitoring",
+  "description": "A simple TypeScript backend for health monitoring and deployment verification",
   "main": "dist/index.js",
   "scripts": {
     "build": "tsc",
@@ -15,10 +15,11 @@
   },
   "keywords": [
     "typescript",
-    "port-check",
     "health-check",
     "docker",
-    "express"
+    "express",
+    "deployment",
+    "monitoring"
   ],
   "author": "",
   "license": "MIT",

@@ -1,6 +1,7 @@
 services:
   rofl-port-check:
     build: .
+    image: "ghcr.io/rube-de/port-check:latest"
     ports:
       - "3000:3000"
     environment:
@@ -13,20 +14,3 @@ services:
       timeout: 10s
       retries: 3
       start_period: 40s
-
-  # Development service
-  rofl-port-check-dev:
-    build:
-      context: .
-      dockerfile: Dockerfile.dev
-    ports:
-      - "3001:3000"
-    environment:
-      - NODE_ENV=development
-      - PORT=3000
-    volumes:
-      - .:/app
-      - /app/node_modules
-    restart: unless-stopped
-    profiles:
-      - dev
