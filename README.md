@@ -7,7 +7,6 @@ A simple TypeScript backend service for health monitoring. Built with Express.js
 - **Health Check Endpoints**: Built-in health, readiness, and liveness endpoints
 - **Docker Support**: Containerized deployment with Docker and Docker Compose
 - **TypeScript**: Full TypeScript support with strict type checking
-- **Comprehensive Testing**: Integration tests with Jest
 - **Lightweight**: Minimal dependencies for fast deployment
 
 ## API Endpoints
